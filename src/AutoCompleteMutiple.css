@@ -1,0 +1,92 @@
+.credit{
+    position:fixed;
+    top:0;
+    right :0;
+    margin:10px;
+    color:white;
+  }
+  .credit a{
+    text-decoration:none;
+    color:white;
+  }
+  .list_container {
+      color: #ffffff;
+      width:350px;
+  }
+  .list_container li{
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 30px 10px 15px;
+      background: #9b87fd;
+      border-radius: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+  }
+  .list_container li:after {
+        content: " ×";
+        color: #333;
+        font-weight: 400;
+        opacity: .6;
+        font-size: 18px;
+        line-height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 9px;
+      }
+    
+    
+  
+  .input_container{
+    position:relative;
+  }
+  
+  
+  .input_container input {
+      border: 1px solid #7BA4FF;
+      padding: 0.7rem 0.5rem;
+      width: 300px;
+      color: white;
+      font-size: 13px;
+      margin:20px 0 0;
+      background: #2a2734;
+  }
+  input:focus{
+    outline: none;
+  }
+  
+  .no-suggestions {
+    color: #999;
+    padding: 0.7rem;
+    position: absolute;
+    top: 60px;
+  }
+  
+  .suggestions {
+    border: 1px solid #CCC;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: calc(300px + 1rem);
+    position: absolute;
+    top: 60px;
+    background:white;
+  }
+  
+  .suggestions li {
+    padding: 0.7rem;
+  }
+  
+  .suggestion-active,
+  .suggestions li:hover {
+    background-color: #7BA4FF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #ececec;
+  }
